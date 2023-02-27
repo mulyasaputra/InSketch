@@ -27,7 +27,7 @@
             <h3>{{ $data->h1->about }}</h3>
             <p>{{ $data->body->about }}</p>
             <h3 class="mt-4">{{ $data->h1->desk }}</h3>
-            <p>{{ $data->body->about }}</p>
+            <p>{{ $data->body->desk }}</p>
             <div class="row mt-4">
                <div class="col-6">
                   <h3>{{ $data->h1->skill }}</h3>
