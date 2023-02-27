@@ -1,0 +1,379 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,900;1,700&display=swap");
+:root {
+   --bs-font-sans-serif:"Montserrat", sans-serif !important;
+    --Red: #dc3545;
+    --Biru: #2c91fb;
+    --Gray: #888192;
+    --Dark: #22222a;
+    --Aktif: #4b4d55;
+    --color: #1d1d1f;
+    --White: #ece5f6;
+    --Clear: #ffffff;
+    --Black: #111111;
+    --Footer: #acacac;
+    --Passive: #262626;
+    --Non-Aktif: #1d1d1f;
+    --Blur: rgba(0, 0, 0, 0.11);
+    --Button-Blur: rgba(240, 248, 255, 0.2);
+    --Firefox: #231c27f8;
+}
+i{font-style: normal;}
+.navbar {
+    letter-spacing: 2px !important;
+    background-color: var(--Blur) !important;
+    backdrop-filter: blur(100px) !important;
+    -moz-backdrop-filter: blur(100px) !important;
+    -webkit-backdrop-filter: blur(100px) !important;
+    -o-backdrop-filter: blur(100px) !important;
+    z-index: 999 !important;
+    top: 0 !important;
+}
+.logo {
+    color: var(--Red);
+    font-family: "Montserrat", sans-serif;
+}
+.logo:hover {
+    cursor: pointer;
+}
+.logo span {
+    color: var(--White);
+}
+.daftar {
+    color: var(--White);
+}
+.daftar a {
+    color: var(--White);
+    text-decoration: none;
+    margin: 0 10px;
+}
+@media (min-width:492px){
+   .daftar a.active {
+       font-weight: 600;
+       border-bottom: 1px solid var(--Red);
+   }
+}
+.daftar button {
+    color: var(--Dark);
+}
+
+.menu-btn {
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Footer Section */
+.footer-bg {
+    background-color: var(--Footer);
+}
+.infoBottom {
+    font-family: "Montserrat", sans-serif;
+    cursor: default;
+    display: grid;
+    grid-template-rows: 6fr 1fr;
+    row-gap: 10px;
+    letter-spacing: 1px;
+}
+.menuLink h2 {
+    font-weight: 700;
+    font-size: 15px;
+}
+.menuLink a {
+    display: block;
+    color: rgb(46, 46, 46);
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.8;
+    text-decoration: none;
+}
+.menuLink :is(a:hover, a.active) {
+    cursor: pointer;
+    text-decoration: underline;
+    color: var(--Red);
+}
+.infoLink {
+    display: grid;
+    grid-template-columns: 2fr 8fr;
+    color: var(--Dark);
+    column-gap: 90px;
+}
+
+.infoLink .homeLink a {
+    margin-right: 10px;
+    color: #000000b7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #000000b7;
+    border-radius: 50px;
+    height: 29px;
+    width: 100%;
+    font-size: 14px;
+    text-decoration: none;
+}
+.infoLink .homeLink a:nth-child(1):hover {
+    color: white;
+    background-image: linear-gradient(
+        to left bottom,
+        #8a3ab9,
+        #a333a9,
+        #b43099,
+        #c03389,
+        #c83a7b,
+        #d54672,
+        #de5569,
+        #e56562,
+        #f27d5c,
+        #f9975a,
+        #fdb15b,
+        #fccc63
+    );
+    border: 1px solid #8a3ab9;
+}
+.infoLink .homeLink a:nth-child(2):hover {
+    color: white;
+    background-color: #ff0000;
+    border: 1px solid #ff0000;
+}
+.infoLink .homeLink a:nth-child(3):hover {
+    color: white;
+    background-color: #333;
+    border: 1px solid #333;
+}
+.infoLink .menuLink {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-items: center;
+}
+.copyright {
+    color: var(--Dark);
+    font-size: 13px;
+    z-index: 1;
+}
+.wave {
+    background: rgb(255 255 255 / 25%);
+    border-radius: 1000% 1000% 0 0;
+    position: absolute;
+    width: 200%;
+    height: 8em;
+    animation: wave 10s -3s linear infinite;
+    transform: translate3d(0, 0, 0);
+    opacity: 0.8;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+}
+.wave:nth-of-type(2) {
+    bottom: -1.25em;
+    animation: wave 18s linear reverse infinite;
+    opacity: 0.8;
+}
+.wave:nth-of-type(3) {
+    bottom: -2.5em;
+    animation: wave 20s -1s reverse infinite;
+    opacity: 0.9;
+}
+@keyframes wave {
+    2% {
+        transform: translateX(1);
+    }
+    25% {
+        transform: translateX(-25%);
+    }
+    50% {
+        transform: translateX(-50%);
+    }
+    75% {
+        transform: translateX(-25%);
+    }
+    100% {
+        transform: translateX(1);
+    }
+}
+
+/* Button Up */
+.button-up {
+    z-index: 98;
+    width: 50px;
+    height: 50px;
+    right: -50px;
+    bottom: -50px;
+    color: var(--Dark);
+    transform: rotate(300deg);
+    transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+}
+.button-up img {
+    width: 15px;
+}
+.button-up.show {
+    right: 20px;
+    bottom: 20px;
+    transform: rotate(0deg);
+    background-color: var(--White);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background: #888192;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    border: 2px solid #888192;
+    background: #625d69;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-image: linear-gradient(
+        to bottom,
+        #bb0000,
+        #d50066,
+        #bd53b8,
+        #7b86ea,
+        #00aaf4
+    );
+}
+
+@media (max-width: 991px) {
+    .infoLink {
+        grid-template-columns: 1fr;
+        gap: 2em;
+    }
+    .infoLink .menuLink {
+        justify-items: stretch;
+    }
+}
+@media (max-width: 767px) {
+    /* Navbar */
+    .menu-btn {
+        display: block !important;
+        z-index: 999;
+        margin-right: 30px;
+    }
+    .menu-btn i.active:before {
+        content: "\f00d";
+    }
+    .menu .daftar {
+        justify-content: center;
+        position: fixed;
+        z-index: -9;
+        height: 100vh;
+        width: 100%;
+        left: 0;
+        top: -100vh;
+        background: #323133;
+        transition: all 0.3s ease;
+        padding: 0 !important;
+        flex-wrap: wrap;
+    }
+    .menu .daftar.active {
+        top: 0;
+    }
+    /* Footer */
+    .infoBottom .menuLink {
+        grid-template-columns: auto;
+        row-gap: 0;
+    }
+    .menuLink h2 {
+        border-bottom: 1px solid #22222a;
+        width: 100%;
+        position: relative;
+        padding: 4px 5px;
+        margin: 0 0 10px;
+    }
+    .menuLink a {
+        padding: 2px 5px;
+    }
+    .menuLink h2:before {
+        position: absolute;
+        content: "\f107";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        width: 10px;
+        height: 10px;
+        right: 5px;
+        transition: all 0.4s;
+    }
+    .menuLink h2.active:before {
+        transform: rotate(-450deg);
+    }
+    .menuLink > div.active {
+        height: auto;
+        padding-bottom: 8px;
+    }
+    .menuLink > div {
+        height: 34px;
+        overflow: hidden;
+        width: 100%;
+    }
+}
+@media (max-width: 491px) {
+    .menu .daftar {
+        justify-content: end;
+        flex-direction: column;
+        height: 310px;
+        padding: 0 13px !important;
+        flex-wrap: nowrap;
+    }
+    .daftar button {
+        margin-top: 20px;
+        margin-left: 0 !important;
+        margin-bottom: 40px;
+        width: 100%;
+    }
+    .menu .daftar a {
+        margin: 8px 0;
+        font-size: 13px;
+        text-align: left;
+        width: 100%;
+    }
+    .menu .daftar a::after {
+        content: " ";
+        display: block;
+        border-bottom: 1px solid #888192;
+        margin-top: 6px;
+    }
+    .infoLink .iconLink {
+        margin-top: 15px;
+        display: flex;
+        width: 120px;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 768px){
+   .row-md-none>* {
+      flex-shrink: 0;
+      width: 100%;
+      max-width: 100%;
+   }
+   .row-md-none {
+      --bs-gutter-x: 0;
+      --bs-gutter-y: 0;
+      display: block !important;
+      flex-wrap: wrap;
+   }
+}
+@media (max-width:500px){
+   .d-mc-none{
+      display: none;
+   }
+   .row-mc-none>* {
+      width: 100%;
+      max-width: 100%;
+   }
+   .row-mc-none {
+      --bs-gutter-x: 1.5rem;
+      --bs-gutter-y: 0;
+      display: block !important;
+      flex-wrap: wrap;
+   }
+   .mt-mc-3{
+      margin-top: 1rem!important;
+   }
+}

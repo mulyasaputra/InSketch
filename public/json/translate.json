@@ -1,0 +1,70 @@
+{
+   "en": [
+     {
+      "h1": {
+         "about": "About Me",
+         "desk": "About this website",
+         "skill": "What I've mastered",
+         "tools": "Tools"
+       },
+      "body": {
+         "about": "Hi, I'm Mulya, from Indonesia. I am a programmer especially in the field of Website Development. Apart from programming, I also have other hobbies such as Graphic Design which focuses on UI/UX Design and Logo Design. If you are interested in the work that I have made, you can download it via the InSketch website or you can visit my social media accounts.",
+         "desk": "A collection of projects that I've worked on in the form and can be downloaded for free by anyone who finds this web site. On this website you can find various projects such as Web Design, UI design, Logo, Vectro, and SourceCode for the website",
+         "skill": ["HTML, CSS & JavaStript", "PHP Native", "Laravel", "Bootstrap", "JQuery"],
+         "tools": ["Figma", "Photoshop", "CorelDraw", "Adobe Illustrator"]
+       },
+       "name": "Mulya Hadi Saputra"
+     }
+   ],
+   "id": [
+     {
+      "h1": {
+         "about": "Tentang saya",
+         "desk": "Tentang situs web ini",
+         "skill": "Yang sudah saya kuasai",
+         "tools": "Peralatan"
+       },
+      "body": {
+         "about": "Hai, saya Mulya, dari Indonesia. Saya seorang programmer khususnya di bidang Website Development. Selain pemrograman, saya juga memiliki hobi lain seperti Desain Grafis yang berfokus pada Desain UI/UX dan Desain Logo. Jika Anda tertarik dengan karya yang telah saya buat, Anda dapat mengunduhnya melalui situs web InSketch atau Anda dapat mengunjungi akun media sosial saya.",
+         "desk": "Kumpulan proyek yang pernah saya kerjakan dalam bentuk dan dapat diunduh secara gratis oleh siapa saja yang menemukan situs web ini. Di situs web ini Anda dapat menemukan berbagai proyek seperti Desain Web, desain UI, Logo, Vectro, dan SourceCode untuk situs web",
+         "skill": ["HTML, CSS & JavaStript", "PHP murni", "Laravel", "Bootstrap", "JQuery"],
+         "tools": ["Figma", "Photoshop", "CorelDraw", "Adobe Illustrator"]
+       },
+       "name": "Mulya Hadi Saputra"
+     }
+   ],
+   "jp": [
+     {
+      "h1": {
+         "about": "私について",
+         "desk": "このウェブサイトについて",
+         "skill": "私がマスターしたこと",
+         "tools": "ツール"
+       },
+      "body": {
+         "about": "こんにちは、インドネシア出身のムリヤです。 私は特にウェブサイト開発の分野のプログラマーです。 プログラミングとは別に、UI/UX デザインやロゴデザインに焦点を当てたグラフィックデザインなどの趣味もあります。 私が作成した作品に興味がある場合は、InSketch Web サイトからダウンロードするか、私のソーシャル メディア アカウントにアクセスしてください。",
+         "desk": "私がこのフォームで取り組んできたプロジェクトのコレクションで、この Web サイトを見つけた人なら誰でも無料でダウンロードできます。 この Web サイトでは、Web デザイン、UI デザイン、ロゴ、Vectro、Web サイトのソースコードなど、さまざまなプロジェクトを見つけることができます。",
+         "skill": ["HTML、CSS、JavaStript", "PHP ネイティブ", "ララベル", "ブートストラップ", "JQuery"],
+         "tools": ["フィグマ", "フォトショップ", "コーレルドロー", "アドビイラストレーター"]
+       },
+       "name": "ムリヤ・ハディ・サプトラ"
+     }
+   ],
+   "jv": [
+      {
+       "h1": {
+          "about": "Babaging kula",
+          "desk": "Babagan situs web iki",
+          "skill": "koding",
+          "tools": "Alat"
+        },
+       "body": {
+          "about": "Woy, aku Mulya, saka Indonesia. Aku iki programmer utamane ing bidang Pengembangan Situs Web. Saliyane programmer, aku uga duwe hobi liyane kayata Desain Grafis sing fokus ing Desain Tampilan aplikasi lan Desain Logo. Yen sampeyan kasengsem karo karya sing wis dakgawe, sampeyan bisa ngundhuh liwat situs web InSketch utawa ngunjungi akun media sosialku.",
+          "desk": "Koleksi proyek sing wis dakgarap ing wangun lan bisa didownload kanthi gratis dening sapa wae sing nemokake situs web iki. Ing situs web iki sampeyan bisa nemokake macem-macem proyek kayata Desain Web, desain UI, Logo, Vectro, lan SourceCode kanggo situs web.",
+          "skill": ["HTML, CSS & JavaStript", "PHP murni", "Laravel", "Bootstrap", "JQuery"],
+          "tools": ["Figma", "Photoshop", "CorelDraw", "Adobe Illustrator"]
+        },
+        "name": "Mulyo Hadi Saputro"
+      }
+    ]
+ }

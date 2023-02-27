@@ -1,0 +1,220 @@
+/* animasi button */
+.herosection a {
+    letter-spacing: 3px;
+    color: rgba(255, 255, 255, 0.4);
+    transition-delay: 1s;
+    background: var(--Aktif);
+}
+.herosection a:hover {
+    transition-delay: 0.8s;
+    color: rgba(255, 255, 255, 1);
+}
+.herosection a span {
+    display: block;
+    position: absolute;
+    background: var(--bs-blue);
+}
+.herosection a span:nth-child(1) {
+    left: 0;
+    bottom: 0;
+    width: 1px;
+    height: 100%;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.5s;
+}
+.herosection a:hover span:nth-child(1) {
+    transform: scaleY(1);
+    transform-origin: bottom;
+    transition: transform 0.5s;
+}
+.herosection a span:nth-child(2) {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    transform: scalex(0);
+    transform-origin: right;
+    transition: transform 0.5s;
+}
+.herosection a:hover span:nth-child(2) {
+    transform: scalex(1);
+    transform-origin: left;
+    transition: transform 0.5s;
+}
+.herosection a span:nth-child(3) {
+    right: 0;
+    bottom: 0;
+    width: 1px;
+    height: 100%;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.5s;
+    transition-delay: 0.5s;
+}
+.herosection a:hover span:nth-child(3) {
+    transform: scaleY(1);
+    transform-origin: bottom;
+    transition: transform 0.5s;
+    transition-delay: 0.5s;
+}
+.herosection a span:nth-child(4) {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 1px;
+    transform: scalex(0);
+    transform-origin: right;
+    transition: transform 0.5s;
+    transition-delay: 0.5s;
+}
+.herosection a:hover span:nth-child(4) {
+    transform: scalex(1);
+    transform-origin: left;
+    transition: transform 0.5s;
+    transition-delay: 0.5s;
+}
+
+/*----------------------- Latest Project ---------------------  */
+#post-card::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+#post-card {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    transition: all 0.2s;
+    will-change: transform;
+    user-select: none;
+    cursor: -webkit-grab;
+    cursor: -moz-grab;
+    cursor: grab;
+    scrollbar-width: none;
+}
+#post-card.active {
+    cursor: -webkit-grabbing;
+    cursor: -moz-grabbing;
+    cursor: grabbing;
+}
+.Fas-icon {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+    background-color: aliceblue;
+    color: var(--Non-Aktif);
+    border-radius: 100%;
+    font-size: 1.3em;
+    font-style: normal;
+}
+.box-project {
+    margin-right: calc(var(--bs-gutter-x) * 0.5);
+    margin-left: calc(var(--bs-gutter-x) * 0.5);
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.box-project:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.box-project:hover > div :where(i, h4) {
+    cursor: pointer;
+}
+.box-project .row > * {
+    width: fit-content;
+}
+.box-project .row a {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-style: normal;
+}
+/*----------------------- best video ---------------------  */
+#player {
+    border: 5px solid white;
+}
+.fasinc {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
+/*----------------------- testimonial card ---------------------  */
+#testimonialCard::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+#testimonialCard {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    transition: all 0.2s;
+    will-change: transform;
+    user-select: none;
+    cursor: -webkit-grab;
+    cursor: -moz-grab;
+    cursor: grab;
+    scrollbar-width: none;
+}
+.testimonial-card .card-up {
+    height: 120px;
+    overflow: hidden;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+}
+.testimonial-card .avatar {
+    width: 110px;
+    margin-top: -60px;
+    overflow: hidden;
+    border: 3px solid #fff;
+    border-radius: 50%;
+}
+
+.form-contact {
+    background-color: #424242;
+}
+.form-contact > div i {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-style: normal;
+    position: absolute;
+    left: 2rem;
+}
+.form-contact .input-group {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    background-color: #010101;
+    border: 1px solid var(--bs-red);
+}
+.form-contact .input-group input {
+    width: 100%;
+    font-size: 1.3rem;
+    background: none;
+    padding: 1.3rem 1rem 1.3rem 4.2rem;
+    border: none;
+    color: #fff;
+    position: relative;
+}
+.form-contact .input-group textarea {
+    width: 100%;
+    background: none;
+    color: #fff;
+    font-size: 1.3rem;
+    padding: 1rem;
+    min-height: 184px;
+}
+/* Sesponsive */
+@media (max-width: 991px) {
+    #herosection {
+        height: fit-content !important;
+    }
+    .herosection {
+        margin: 3em 0;
+    }
+    .herosection .lead {
+        font-size: 1em;
+    }
+}
+* {
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}

@@ -1,0 +1,45 @@
+.navbar .suport, footer :where(.iconLink a,.wave), .modal-footer button, .modal-content.bg-dark  {
+   border-radius: 0 !important;
+}
+.icon a{
+   background-color: rgb(255, 255, 255);
+   --axis: 2em;
+   color: var(--Dark);
+   width: 2em;
+   height: 2em;
+   font-size: 1.4em;
+   margin-right: 0.3em;
+   position: relative;
+   overflow: hidden;
+   transition: all .3s ease-in-out;
+}
+.icon a:hover{
+   /* --axis: 7.5em; */
+   color: var(--axis-color) !important;
+   width: var(--axis);
+}
+
+.icon a::before {
+   position: absolute;
+   transform: translate(-50%,-50%)!important;
+   left: 1em;
+   top: 50%!important;
+}
+.icon a span{
+   font-family: 'Montserrat', sans-serif;
+   position: absolute;
+   top: 50%!important;
+   left: 2em;
+   transform: translate(0,-50%)!important;
+
+}
+
+   .col-fiil{
+      width: var(--bs-axis-w);
+      flex: 0 0 auto;
+      /* calc(var(--bs-gutter-x) * .5) */
+   }
+   .col-full{
+      flex: 0 0 auto;     
+      width: calc(100% - var(--bs-axis-w));
+   }
