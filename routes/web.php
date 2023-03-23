@@ -22,16 +22,6 @@ use App\Http\Controllers\DashboardDiscoverController;
 
 */
 
-Route::post('/GetTelegram', function (Request $request) {
-   $validated = $request->validate([
-      'name' => 'required|max:255|min:3',
-      'email' => 'required|email:dns',
-      'message' => 'required|min:3',
-   ]);
-   return view('sendMessage',[
-      'message' => $validated,
-   ]);
-});
 Route::get('/', function () {
     return view('home',[
       'title' => 'Home',

@@ -174,7 +174,7 @@
          <h3 class="mb-4">Contact Me</h2>
          <p class="w-75 m-auto mb-4 pb-2 mb-md-5 pb-md-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus pariatur magnam unde tempora dolorum illo architecto illum obcaecati voluptate odio?</p>   
       </div>
-      <form action="/GetTelegram" method="post" class="position-relative z-2">
+      <form action="" method="post" class="position-relative z-2">
          @csrf
          <div class="box-input mt-3">
             <input class="w-100 p-2 rounded-2 @error('name') is-invalid @enderror" type="text" name="name" id="name" required placeholder="Name" value="{{ old('name') }}">
